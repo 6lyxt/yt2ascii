@@ -14,7 +14,7 @@ mkdir -p "$WORKDIR/frames"
 ffmpeg -i "$WORKDIR/$VIDEO_FILE" -vf "fps=30,scale=240:-1" "$WORKDIR/frames/frame_%04d.png"
 
 echo "Playing video in ASCII..."
-./ascii_player "$WORKDIR/frames"
+./yt2ascii "$WORKDIR/frames"
 
 echo "Cleaning up..."
 rm -rf "$WORKDIR"
