@@ -8,7 +8,7 @@ c++ tool to play a youtube video in terminal (as ascii art)
 
 ## build
 ```bash
-$ g++ -std=c++17 main.cpp -o ascii_player `pkg-config --cflags --libs opencv4`
+$ g++ -std=c++17 main.cpp -o yt2ascii `pkg-config --cflags --libs opencv4`
 ```
 
 ## usage
